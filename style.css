@@ -1,0 +1,29 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 20px;
+    text-align: center;
+    background-color: #606060;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #00b0f0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bumper {
+    width: 20vw;
+}
+
+@media (max-width: 1000px) {
+    .bumper {
+        width: 30vw;
+    }
+}
