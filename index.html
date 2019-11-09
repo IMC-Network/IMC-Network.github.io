@@ -2,16 +2,30 @@
 <html>
     <head>
         <title>IMC</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="media/Account.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <link rel="shortcut icon" href="media/Account.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="lib/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
-        <img src="media/Normal.png" alt="IMC Logo" class="bumper">
-        <h1>Coming Soon.</h1>
-        <p>We're creating a network that provides you with news, entertainment and more.</p>
-        <p>We've been making a news website and a TV channel that is designed around you.</p>
-        <p><a href="http://imcns.cf" target="_blank">imcns.cf</a> | <a href="http://imcnow.cf" target="_blank">imcnow.cf</a></p>
+        <header>
+            <a href="javascript:toggleMenu('main');" aria-haspopup="true" aria-expanded="false" class="flush logo main" data-menu-dropdown="main">
+                <img src="media/Normal.png" alt="IMC Logo">
+                <i aria-hidden="true" class="material-icons" data-menu-dropdown-icon="main">arrow_drop_down</i>
+            </a>
+            <div role="menu" class="menu" data-menu="main">
+                <a href="https://github.com/IMC-Network/" target="_blank">Visit our GitHub</a>
+            </div>
+        </header>
+        <main>
+            <section class="center">
+                <h1>Coming Soon.</h1>
+                <p>We're creating a network that provides you with news, entertainment and more.</p>
+                <p>We've been making a news website and a TV channel that is designed around you.</p>
+                <p><a href="https://imcns.cf" target="_blank">imcns.cf</a> | <a href="https://imcnow.cf" target="_blank">imcnow.cf</a></p>
+            </section>
+        </main>
     </body>
 </html>

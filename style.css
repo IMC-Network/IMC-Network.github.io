@@ -1,29 +1,133 @@
+:root {
+    --headerFontSize: 30px;
+    --heading1FontSize: 40px;
+    --paragraphFontSize: 20px;
+    --logoColour: #00b0f0;
+    --backgroundColour: #eeeeee;
+    --foregroundColour: #222222;
+    --headerBackgroundColour: black;
+    --headerForegroundColour: #eeeeee;
+    --headerMenuBackgroundColour: #222222;
+    --headerMenuForegroundColour: #eeeeee;
+}
+
 * {
     font-family: "Roboto", sans-serif;
 }
 
 body {
-    margin: 20px;
-    text-align: center;
-    background-color: #606060;
-    color: white;
+    margin: 0;
+    background-color: var(--backgroundColour);
+    color: var(--foregroundColour);
 }
 
-a {
+a:not(.flush) {
     text-decoration: none;
-    color: #00b0f0;
+    color: var(--logoColour);
 }
 
-a:hover {
+a.flush {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:not(.flush):hover {
     text-decoration: underline;
 }
 
-.bumper {
-    width: 20vw;
+h1 {
+    font-size: var(--heading1FontSize);
 }
 
-@media (max-width: 1000px) {
-    .bumper {
-        width: 30vw;
+p {
+    font-size: var(--paragraphFontSize);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 20px);
+    height: var(--headerFontSize);
+    padding: 10px;
+    background-color: var(--headerBackgroundColour);
+    color: var(--headerForegroundColour);
+    font-size: var(--headerFontSize);
+}
+
+header * {
+    vertical-align: top;
+}
+
+header .logo, header .logo img {
+    height: var(--headerFontSize);
+}
+
+header .logo.main {
+    color: var(--logoColour);
+}
+
+header .menu {
+    position: fixed;
+    display: none;
+    top: calc(var(--headerFontSize) + 20px);
+    left: 0;
+    min-width: 200px;
+    padding: 10px;
+    background-color: var(--headerMenuBackgroundColour);
+    color: var(--headerMenuForegroundColour);
+    font-size: var(--paragraphFontSize);
+}
+
+header .menu a {
+    color: var(--headerMenuForegroundColour);
+}
+
+main {
+    margin-top: calc(var(--headerFontSize) + 20px);
+    font-size: var(--paragraphFontSize);
+}
+
+section {
+    padding: 10px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.desktop {
+    display: unset;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Media queries */
+@media (max-width: 400px) {
+    header .menu {
+        width: calc(100vw - 20px);
     }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: unset;
+    }
+}
+
+/* Import overrides */
+.material-icons {
+    font-size: unset;
 }
