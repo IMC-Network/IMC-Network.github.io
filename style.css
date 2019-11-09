@@ -153,9 +153,11 @@ nav .menu {
     left: 0;
     min-width: 200px;
     padding: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
     background-color: var(--navMenuBackgroundColour);
     color: var(--navMenuForegroundColour);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav .menu a {
@@ -172,6 +174,14 @@ nav .menu a {
 
 .right {
     text-align: right;
+}
+
+.desktop {
+    display: unset;
+}
+
+.mobile {
+    display: none;
 }
 
 *[dir="rtl"] .left {
@@ -250,22 +260,8 @@ nav .menu a {
     margin: 0;
 }
 
-.appsListLoader {
-    padding-top: calc(50vh - 150px);
-    padding-bottom: calc(50vh - 150px);
-    text-align: center;
-}
-
 .loader {
     width: 100px;
-}
-
-.appTile {
-    display: inline-block;
-    width: calc(25vw - 15px);
-    height: 12.5vw;
-    margin: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Media queries */
@@ -295,6 +291,20 @@ nav .menu a {
         left: 30vw;
         width: calc(40vw - 20px);
         height: calc(60vh - 20px);
+    }
+}
+
+@media (max-width: 400px) {
+    nav .menu {
+        width: calc(100vw - 32px);
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: unset;
     }
 }
 
