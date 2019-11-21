@@ -302,6 +302,8 @@ nav .menu a {
     margin-right: 0;
 }
 
+/* TODO: Make it mobile friendly */
+
 .featureGrids {
     display: grid;
     grid-template-areas:
