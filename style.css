@@ -335,6 +335,7 @@ nav .menu a {
     bottom: 20px;
     left: 20px;
     font-size: 30px;
+    text-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .featureGrids > a:hover > img {
