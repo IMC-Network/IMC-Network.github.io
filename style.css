@@ -338,7 +338,7 @@ nav .menu a {
 }
 
 .featureGrids > a:hover > img {
-    filter: brightness(100%);
+    filter: brightness(90%);
 }
 
 .featureGrids > a:nth-child(1) {
