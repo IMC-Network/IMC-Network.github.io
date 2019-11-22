@@ -126,6 +126,7 @@ nav {
     overflow-y: auto;
     background-color: var(--navBackgroundColour);
     color: var(--navForegroundColour);
+    z-index: 1;
 }
 
 nav > a {
@@ -273,6 +274,8 @@ nav .menu a {
     width: 100px;
 }
 
+/* TODO: Make tablist scroll when overflowing */
+
 .tablist {
     margin-left: -10px;
     margin-right: -10px;
@@ -301,8 +304,6 @@ nav .menu a {
 .tablist a:last-child {
     margin-right: 0;
 }
-
-/* TODO: Make it mobile friendly */
 
 .featureGrids {
     display: grid;
@@ -387,6 +388,14 @@ nav .menu a {
     .dialog {
         left: 10vw;
         width: calc(80vw - 20px);
+    }
+
+    .featureGrids {
+        display: block;
+    }
+
+    .featureGrids > a {
+        height: 30vh!important;
     }
 }
 
