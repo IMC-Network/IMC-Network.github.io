@@ -10,7 +10,9 @@
         <script src="https://imcnetwork.cf/lib/tools/jquery.min.js"></script>
         <script src="https://imcnetwork.cf/lib/tools/jquery-ui.min.js"></script>
         <script src="https://imcnetwork.cf/lib/tools/touchpunch.min.js"></script>
+        <script src="https://imcnetwork.cf/lib/tools/showdown.min.js"></script>
         <script src="https://imcnetwork.cf/lib/IMCUI/script.js"></script>
+        <script src="https://imcnetwork.cf/lib/tools/imports.js"></script>
         <script src="https://imcnetwork.cf/lib/tools/lang.js"></script>
         <script src="/lang/overrides.js"></script>
         <script src="/script.js"></script>
@@ -21,15 +23,7 @@
                 <img src="/media/Normal.png" alt="IMC Logo">
                 <i aria-hidden="true" class="material-icons" data-menu-dropdown-icon="main">arrow_drop_down</i>
             </a>
-            <div role="menu" class="menu" data-menu="main">
-                <a href="/" class="logo">
-                    <img src="/media/Normal.png" alt="Go home">
-                </a>
-                <a href="/play/" class="logo">
-                    <img src="/media/IMC Play.png" alt="Go to IMC Play">
-                </a>
-                <a href="https://github.com/IMC-Network/" target="_blank">Visit our GitHub</a>
-            </div>
+            <div role="menu" class="menu" data-menu="main" import="/templates/menu.html"></div>
         </nav>
         <main>
             <section class="center">
