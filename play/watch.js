@@ -4,16 +4,15 @@ var player;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player("player", {
-        videoId: "Bey4XXJAqS8",
+        videoId: "9oPLm0pRW4w",
         width: $("section").width(),
         height: $("section").width() * RATIO_16BY9,
         playerVars: {
             autoplay: 1,
-            controls: 0,
+            controls: 1,
             modestbranding: 1,
             rel: 0,
-            showinfo: 0,
-            disablekb: 1
+            showinfo: 0
         },
         events: {
             onReady: onPlayerReady
