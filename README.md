@@ -1,2 +1,2 @@
-# IMC-Network.github.io
+# IMC Website
 Main website for IMC.
