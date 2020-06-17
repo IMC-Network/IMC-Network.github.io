@@ -6,7 +6,9 @@ $(function() {
     videojs("player", {}, function() {
         player = this;
 
-        player.ads();
+        try {
+            player.ads();
+        } catch (e) {}
 
         player.src("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4");
         player.poster("https://upload.wikimedia.org/wikipedia/commons/c/ca/Bbb-splash.png");
